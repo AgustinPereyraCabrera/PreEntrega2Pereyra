@@ -9,7 +9,7 @@
 	height: 100%;
 }
 header{font-size: 22px;
-	background-color: #daa89b;;}
+	background-color: #daa89b;}
 nav{display:flex;
 	height: 86px;}
 ul{list-style: none;
@@ -26,11 +26,39 @@ justify-content: space-between;}
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#Nosotros--fondo{
-	background-image: url(./imgs/Us.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+
+.main-text--display{
+	position: absolute;
+	top: 12%;
+	left:2rem;
+	background-color:#884c42 
 }
+/*Main*/
+.main-art-sec--pos{
+	position: relative;
+	display: inline-block;
+	text-align:left top;
+	height: 50rem;
+}
+#usImg{
+	height:10%;
+	max-height: 800px;
+	padding-top: 160px;
+}
+
+#usBody--background{
+	background-color: #884c42;
+}
+@media screen and (max-width: 1030px){
+	.main-text--display{
+		position: inherit;
+	}
+	#usImgDiv{
+		padding: 0;
+		height: 400px;
+	}
+}
+
 /*Dropdown*/
 
 @media screen and (min-width: 1020px) {
@@ -75,6 +103,19 @@ justify-content: space-between;}
 	color: #1f2421
 	;}
 
+
+/*Carrusel*/
+	#carouselExampleCaptions{
+		width: 700px !important;
+		padding-bottom: 100px;
+	}
+
+	@media (max-width: 768px) {
+		#carouselExampleCaptions {
+			width: 480px !important;
+			height: auto;
+		} 
+	}
 
 /*cartas*/
 .cardContenedor{
@@ -175,7 +216,7 @@ footer{
 	color:#884c42;
 	height:120px;
 	bottom: 0;
-	
+	width: 100%;
 }
 #footer-aside-ul-li{
 	width: 19px;
@@ -205,4 +246,8 @@ footer{
 textarea{
 	max-width:400px;
 	max-height: 450px;
+}
+#footer-us{
+	position: absolute;
+	width: 100%;
 }
