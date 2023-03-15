@@ -58,7 +58,17 @@ justify-content: space-between;}
 		height: 400px;
 	}
 }
-
+/*Música*/
+.DivMusica{
+	width: 1000px;
+	position: absolute;
+	flex-wrap: wrap;
+	padding-left: 500px;
+	margin-left: 500px;
+}
+#h2Musica{
+	font-family: 'Patrick Hand',cursive;
+}
 /*Dropdown*/
 
 @media screen and (min-width: 1020px) {
@@ -100,8 +110,9 @@ justify-content: space-between;}
 
 .titulo{
 	padding:35px;
-	color: #1f2421
-	;}
+	color: #1f2421;
+	width: 100%;
+}
 
 
 /*Carrusel*/
